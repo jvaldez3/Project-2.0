@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- BEGIN: Page Level CSS-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="../public/styles/assets/css/profile.css">
+<link rel="stylesheet" type="text/css" href="../styles/assets/css/profile.css">
 <!-- END: Page Level CSS-->
 <!-- BEGIN: Custom CSS-->
 <!-- <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom/custom.css"> -->
@@ -17,9 +17,9 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <img src="../public/assets/img/PedalPals5.png" class="brand-logo"></img>
+                <img src="../assets/img/PedalPals5.png" class="brand-logo"></img>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="../public/a.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="/profile">Profile</a></li>
                     <li><a href="/logout">Logout</a></li>
                     <li><a href=" match.html" class="waves-effect waves-light btn">Find Pals</a></li>
@@ -35,7 +35,7 @@
 
     <!-- BEGIN: Page Main-->
     <section class=image>
-        <img class="responsive-img" src="../public/assets/img/bannerimage.jpeg">
+        <img class="responsive-img" src="../assets/img/bannerimage.jpeg">
     </section>
     <div class="section" id="user-profile">
         <div class="row">
@@ -43,8 +43,7 @@
             <div class="col s12 m4 l3 user-section-negative-margin">
                 <div class="row">
                     <div class="col s12 center-align">
-                        <img class="responsive-img circle z-depth-5" width="200"
-                            src="../public/assets/img/profilepic3.png"
+                        <img class="responsive-img circle z-depth-5" width="200" src="../assets/img/profilepic3.png"
                             alt="">
                         <br>
                         <a class="waves-effect waves-light btn mt-5 border-radius-4" href="/quiz">Edit Profile</a>
@@ -64,7 +63,8 @@
                 <div class="row">
                     <div class="col s12">
                         <p class="m-0">STRAVA</p>
-                        <p class="m-0"><a href="#">56 likes</a> and<a href="#">16 comments</a> on your most recent post</p>
+                        <p class="m-0"><a href="#">56 likes</a> and<a href="#">16 comments</a> on your most recent post
+                        </p>
                     </div>
                 </div>
                 <hr>
@@ -114,9 +114,7 @@
                             <div class="row">
                                 <div class="col s12">
                                     <h5>
-                                        <input type="text" id="name" value="grab">
-                                        <input type="submt" id="name-submit">
-                                        <div id=""></div>
+                                        Josh Valdez
                                     </h5>
                                     <p>Mountain Biker<span class="amber-text">
                                 </div>
@@ -148,7 +146,7 @@
                                         <div class="col s12">
                                             <div class="card card-border z-depth-2">
                                                 <div class="card-image">
-                                                    <img src="../public/assets/img/clycling2.jpg" alt="">
+                                                    <img src="../assets/img/clycling2.jpg" alt="">
                                                 </div>
                                                 <div class="card-content">
                                                     <h6 class="font-weight-900 text-uppercase"><a href="#">Latest
@@ -185,8 +183,7 @@
                                         <div class="col s12">
                                             <div class="card card-border z-depth-2">
                                                 <div class="card-image">
-                                                    <img src="../public/assets/img/cycling5.jpeg"
-                                                        alt="">
+                                                    <img src="../assets/img/cycling5.jpeg" alt="">
                                                 </div>
                                                 <div class="card-content">
                                                     <h6 class="font-weight-900 text-uppercase"><a href="#">Newest Pedal
@@ -322,430 +319,430 @@
                         </div>
                     </div>
                 </div>
-                    <div id="settings" class="col s12">
-                        <p class="mt-8 mb-0 ml-5 font-weight-900">GENERAL SETTINGS</p>
-                        <ul class="collection border-none">
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Notifications</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input checked type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                <div id="settings" class="col s12">
+                    <p class="mt-8 mb-0 ml-5 font-weight-900">GENERAL SETTINGS</p>
+                    <ul class="collection border-none">
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Notifications</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input checked type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
                                 </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Show recent activity</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Show recent activity</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Show Task statistics</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Show your emails</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Email Notifications</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input checked type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="mt-8 mb-0 ml-5 font-weight-900">SYSTEM SETTINGS</p>
+                    <ul class="collection border-none">
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>System Logs</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Error Reporting</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Applications Logs</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input checked type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Backup Servers</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="collection-item border-none mt-3">
+                            <div class="m-0">
+                                <span>Audit Logs</span>
+                                <div class="switch right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="activity" class="col s12">
+                    <div class="activity">
+                        <p class="mt-5 mb-0 ml-5 font-weight-900">SYSTEM LOGS</p>
+                        <ul class="collection with-header">
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Homepage mockup design <span class="secondary-content">Just now</span>
+                                </div>
+                                <p class="mt-0 mb-2">Melissa liked your activity.</p>
+                                <span class="new badge amber" data-badge-caption="Important"> </span>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Show recent activity</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Melissa liked your activity Drinks. <span class="secondary-content">10
+                                        mins</span>
                                 </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                                <span class="new badge light-green" data-badge-caption="Resolved"></span>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Show recent activity</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    12 new users registered <span class="secondary-content">30 mins</span>
                                 </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Show Task statistics</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Tina is attending your activity <span class="secondary-content">2 hrs</span>
                                 </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Show your emails</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Josh is now following you <span class="secondary-content">5 hrs</span>
                                 </div>
-                            </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Email Notifications</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input checked type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
-                                </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                                <span class="new badge red" data-badge-caption="Pending"></span>
                             </li>
                         </ul>
-                        <p class="mt-8 mb-0 ml-5 font-weight-900">SYSTEM SETTINGS</p>
-                        <ul class="collection border-none">
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>System Logs</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                        <p class="mt-5 mb-0 ml-5 font-weight-900">APPLICATIONS LOGS</p>
+                        <ul class="collection with-header">
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    New order received urgent <span class="secondary-content">Just now</span>
                                 </div>
+                                <p class="mt-0 mb-2">Melissa liked your activity.</p>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Error Reporting</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
-                                </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">System shutdown. <span class="secondary-content">5
+                                        min</span></div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                                <span class="new badge blue" data-badge-caption="Urgent"> </span>
                             </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Applications Logs</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input checked type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Database overloaded 89% <span class="secondary-content">20 min</span>
                                 </div>
-                            </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Backup Servers</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="collection-item border-none mt-3">
-                                <div class="m-0">
-                                    <span>Audit Logs</span>
-                                    <div class="switch right">
-                                        <label>
-                                            <input type="checkbox" />
-                                            <span class="lever"></span>
-                                        </label>
-                                    </div>
-                                </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
                             </li>
                         </ul>
-                    </div>
-                    <div id="activity" class="col s12">
-                        <div class="activity">
-                            <p class="mt-5 mb-0 ml-5 font-weight-900">SYSTEM LOGS</p>
-                            <ul class="collection with-header">
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        Homepage mockup design <span class="secondary-content">Just now</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Melissa liked your activity.</p>
-                                    <span class="new badge amber" data-badge-caption="Important"> </span>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        Melissa liked your activity Drinks. <span class="secondary-content">10
-                                            mins</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                    <span class="new badge light-green" data-badge-caption="Resolved"></span>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        12 new users registered <span class="secondary-content">30 mins</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        Tina is attending your activity <span class="secondary-content">2 hrs</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        Josh is now following you <span class="secondary-content">5 hrs</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                    <span class="new badge red" data-badge-caption="Pending"></span>
-                                </li>
-                            </ul>
-                            <p class="mt-5 mb-0 ml-5 font-weight-900">APPLICATIONS LOGS</p>
-                            <ul class="collection with-header">
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        New order received urgent <span class="secondary-content">Just now</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Melissa liked your activity.</p>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">System shutdown. <span class="secondary-content">5
-                                            min</span></div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                    <span class="new badge blue" data-badge-caption="Urgent"> </span>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                        Database overloaded 89% <span class="secondary-content">20 min</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                </li>
-                            </ul>
-                            <p class="mt-5 mb-0 ml-5 font-weight-900">SERVER LOGS</p>
-                            <ul class="collection with-header">
-                                <li class="collection-item">
-                                    <div class="font-weight-900">System error <span class="secondary-content">10
-                                            min</span></div>
-                                    <p class="mt-0 mb-2">Melissa liked your activity.</p>
-                                </li>
-                                <li class="collection-item">
-                                    <div class="font-weight-900">
-                                     Production server down. <span class="secondary-content">1 hrs</span>
-                                    </div>
-                                    <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
-                                    <span class="new badge blue" data-badge-caption="Urgent"></span>
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="mt-5 mb-0 ml-5 font-weight-900">SERVER LOGS</p>
+                        <ul class="collection with-header">
+                            <li class="collection-item">
+                                <div class="font-weight-900">System error <span class="secondary-content">10
+                                        min</span></div>
+                                <p class="mt-0 mb-2">Melissa liked your activity.</p>
+                            </li>
+                            <li class="collection-item">
+                                <div class="font-weight-900">
+                                    Production server down. <span class="secondary-content">1 hrs</span>
+                                </div>
+                                <p class="mt-0 mb-2">Here are some news feed interactions concepts.</p>
+                                <span class="new badge blue" data-badge-caption="Urgent"></span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
-    <!-- END RIGHT SIDEBAR NAV -->
-    <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top"><a
-            class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i
-                class="material-icons" href="../public/match.html">add</i></a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- END: Page Main-->
+        <!-- END RIGHT SIDEBAR NAV -->
+        <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top"><a
+                class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons"
+                    href="../public/match.html">add</i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- END: Page Main-->
 
-    <!-- Theme Customizer -->
+        <!-- Theme Customizer -->
 
-    <a href="#" data-target="theme-cutomizer-out"
-        class="btn btn-customizer slate-blue white-text sidenav-trigger theme-cutomizer-trigger"><i
-            class="material-icons">settings</i></a>
+        <a href="#" data-target="theme-cutomizer-out"
+            class="btn btn-customizer slate-blue white-text sidenav-trigger theme-cutomizer-trigger"><i
+                class="material-icons">settings</i></a>
 
-    <div id="theme-cutomizer-out" class="theme-cutomizer sidenav row">
-        <div class="col s12">
-            <a class="sidenav-close" href="#!"><i class="material-icons">close</i></a>
-            <h5 class="theme-cutomizer-title">Theme Customizer</h5>
-            <p class="medium-small">Customize & Preview in Real Time</p>
-            <div class="menu-options">
-                <h6 class="mt-6">Menu Options</h6>
+        <div id="theme-cutomizer-out" class="theme-cutomizer sidenav row">
+            <div class="col s12">
+                <a class="sidenav-close" href="#!"><i class="material-icons">close</i></a>
+                <h5 class="theme-cutomizer-title">Theme Customizer</h5>
+                <p class="medium-small">Customize & Preview in Real Time</p>
+                <div class="menu-options">
+                    <h6 class="mt-6">Menu Options</h6>
+                    <hr class="customize-devider" />
+                    <div class="menu-options-form row">
+                        <div class="input-field col s12 menu-color mb-0">
+                            <p class="mt-0">Menu Color</p>
+                            <div class="gradient-color center-align">
+                                <span class="menu-color-option gradient-45deg-indigo-blue"
+                                    data-color="gradient-45deg-indigo-blue"></span>
+                                <span class="menu-color-option gradient-45deg-purple-deep-orange"
+                                    data-color="gradient-45deg-purple-deep-orange"></span>
+                                <span class="menu-color-option gradient-45deg-light-blue-cyan"
+                                    data-color="gradient-45deg-light-blue-cyan"></span>
+                                <span class="menu-color-option gradient-45deg-purple-amber"
+                                    data-color="gradient-45deg-purple-amber"></span>
+                                <span class="menu-color-option gradient-45deg-purple-deep-purple"
+                                    data-color="gradient-45deg-purple-deep-purple"></span>
+                                <span class="menu-color-option gradient-45deg-deep-orange-orange"
+                                    data-color="gradient-45deg-deep-orange-orange"></span>
+                                <span class="menu-color-option gradient-45deg-green-teal"
+                                    data-color="gradient-45deg-green-teal"></span>
+                                <span class="menu-color-option gradient-45deg-indigo-light-blue"
+                                    data-color="gradient-45deg-indigo-light-blue"></span>
+                                <span class="menu-color-option gradient-45deg-red-pink"
+                                    data-color="gradient-45deg-red-pink"></span>
+                            </div>
+                            <div class="solid-color center-align">
+                                <span class="menu-color-option red" data-color="red"></span>
+                                <span class="menu-color-option purple" data-color="purple"></span>
+                                <span class="menu-color-option pink" data-color="pink"></span>
+                                <span class="menu-color-option deep-purple" data-color="deep-purple"></span>
+                                <span class="menu-color-option cyan" data-color="cyan"></span>
+                                <span class="menu-color-option teal" data-color="teal"></span>
+                                <span class="menu-color-option light-blue" data-color="light-blue"></span>
+                                <span class="menu-color-option amber darken-3" data-color="amber darken-3"></span>
+                                <span class="menu-color-option brown darken-2" data-color="brown darken-2"></span>
+                            </div>
+                        </div>
+                        <div class="input-field col s12 menu-bg-color mb-0">
+                            <p class="mt-0">Menu Background Color</p>
+                            <div class="gradient-color center-align">
+                                <span class="menu-bg-color-option gradient-45deg-indigo-blue"
+                                    data-color="gradient-45deg-indigo-blue"></span>
+                                <span class="menu-bg-color-option gradient-45deg-purple-deep-orange"
+                                    data-color="gradient-45deg-purple-deep-orange"></span>
+                                <span class="menu-bg-color-option gradient-45deg-light-blue-cyan"
+                                    data-color="gradient-45deg-light-blue-cyan"></span>
+                                <span class="menu-bg-color-option gradient-45deg-purple-amber"
+                                    data-color="gradient-45deg-purple-amber"></span>
+                                <span class="menu-bg-color-option gradient-45deg-purple-deep-purple"
+                                    data-color="gradient-45deg-purple-deep-purple"></span>
+                                <span class="menu-bg-color-option gradient-45deg-deep-orange-orange"
+                                    data-color="gradient-45deg-deep-orange-orange"></span>
+                                <span class="menu-bg-color-option gradient-45deg-green-teal"
+                                    data-color="gradient-45deg-green-teal"></span>
+                                <span class="menu-bg-color-option gradient-45deg-indigo-light-blue"
+                                    data-color="gradient-45deg-indigo-light-blue"></span>
+                                <span class="menu-bg-color-option gradient-45deg-red-pink"
+                                    data-color="gradient-45deg-red-pink"></span>
+                            </div>
+                            <div class="solid-color center-align">
+                                <span class="menu-bg-color-option red" data-color="red"></span>
+                                <span class="menu-bg-color-option purple" data-color="purple"></span>
+                                <span class="menu-bg-color-option pink" data-color="pink"></span>
+                                <span class="menu-bg-color-option deep-purple" data-color="deep-purple"></span>
+                                <span class="menu-bg-color-option cyan" data-color="cyan"></span>
+                                <span class="menu-bg-color-option teal" data-color="teal"></span>
+                                <span class="menu-bg-color-option light-blue" data-color="light-blue"></span>
+                                <span class="menu-bg-color-option amber darken-3" data-color="amber darken-3"></span>
+                                <span class="menu-bg-color-option brown darken-2" data-color="brown darken-2"></span>
+                            </div>
+                        </div>
+                        <div class="input-field col s12">
+                            <div class="switch">
+                                Menu Dark
+                                <label class="float-right"><input class="menu-dark-checkbox" type="checkbox" /> <span
+                                        class="lever ml-0"></span></label>
+                            </div>
+                        </div>
+                        <div class="input-field col s12">
+                            <div class="switch">
+                                Menu Collapsed
+                                <label class="float-right"><input class="menu-collapsed-checkbox" type="checkbox" />
+                                    <span class="lever ml-0"></span></label>
+                            </div>
+                        </div>
+                        <div class="input-field col s12">
+                            <div class="switch">
+                                <p class="mt-0">Menu Selection</p>
+                                <label>
+                                    <input class="menu-selection-radio with-gap" value="sidenav-active-square"
+                                        name="menu-selection" type="radio" />
+                                    <span>Square</span>
+                                </label>
+                                <label>
+                                    <input class="menu-selection-radio with-gap" value="sidenav-active-rounded"
+                                        name="menu-selection" type="radio" />
+                                    <span>Rounded</span>
+                                </label>
+                                <label>
+                                    <input class="menu-selection-radio with-gap" value="" name="menu-selection"
+                                        type="radio" />
+                                    <span>Normal</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mt-6">Navbar Options</h6>
                 <hr class="customize-devider" />
-                <div class="menu-options-form row">
-                    <div class="input-field col s12 menu-color mb-0">
-                        <p class="mt-0">Menu Color</p>
+                <div class="navbar-options row">
+                    <div class="input-field col s12 navbar-color mb-0">
+                        <p class="mt-0">Navbar Color</p>
                         <div class="gradient-color center-align">
-                            <span class="menu-color-option gradient-45deg-indigo-blue"
+                            <span class="navbar-color-option gradient-45deg-indigo-blue"
                                 data-color="gradient-45deg-indigo-blue"></span>
-                            <span class="menu-color-option gradient-45deg-purple-deep-orange"
+                            <span class="navbar-color-option gradient-45deg-purple-deep-orange"
                                 data-color="gradient-45deg-purple-deep-orange"></span>
-                            <span class="menu-color-option gradient-45deg-light-blue-cyan"
+                            <span class="navbar-color-option gradient-45deg-light-blue-cyan"
                                 data-color="gradient-45deg-light-blue-cyan"></span>
-                            <span class="menu-color-option gradient-45deg-purple-amber"
+                            <span class="navbar-color-option gradient-45deg-purple-amber"
                                 data-color="gradient-45deg-purple-amber"></span>
-                            <span class="menu-color-option gradient-45deg-purple-deep-purple"
+                            <span class="navbar-color-option gradient-45deg-purple-deep-purple"
                                 data-color="gradient-45deg-purple-deep-purple"></span>
-                            <span class="menu-color-option gradient-45deg-deep-orange-orange"
+                            <span class="navbar-color-option gradient-45deg-deep-orange-orange"
                                 data-color="gradient-45deg-deep-orange-orange"></span>
-                            <span class="menu-color-option gradient-45deg-green-teal"
+                            <span class="navbar-color-option gradient-45deg-green-teal"
                                 data-color="gradient-45deg-green-teal"></span>
-                            <span class="menu-color-option gradient-45deg-indigo-light-blue"
+                            <span class="navbar-color-option gradient-45deg-indigo-light-blue"
                                 data-color="gradient-45deg-indigo-light-blue"></span>
-                            <span class="menu-color-option gradient-45deg-red-pink"
+                            <span class="navbar-color-option gradient-45deg-red-pink"
                                 data-color="gradient-45deg-red-pink"></span>
                         </div>
                         <div class="solid-color center-align">
-                            <span class="menu-color-option red" data-color="red"></span>
-                            <span class="menu-color-option purple" data-color="purple"></span>
-                            <span class="menu-color-option pink" data-color="pink"></span>
-                            <span class="menu-color-option deep-purple" data-color="deep-purple"></span>
-                            <span class="menu-color-option cyan" data-color="cyan"></span>
-                            <span class="menu-color-option teal" data-color="teal"></span>
-                            <span class="menu-color-option light-blue" data-color="light-blue"></span>
-                            <span class="menu-color-option amber darken-3" data-color="amber darken-3"></span>
-                            <span class="menu-color-option brown darken-2" data-color="brown darken-2"></span>
-                        </div>
-                    </div>
-                    <div class="input-field col s12 menu-bg-color mb-0">
-                        <p class="mt-0">Menu Background Color</p>
-                        <div class="gradient-color center-align">
-                            <span class="menu-bg-color-option gradient-45deg-indigo-blue"
-                                data-color="gradient-45deg-indigo-blue"></span>
-                            <span class="menu-bg-color-option gradient-45deg-purple-deep-orange"
-                                data-color="gradient-45deg-purple-deep-orange"></span>
-                            <span class="menu-bg-color-option gradient-45deg-light-blue-cyan"
-                                data-color="gradient-45deg-light-blue-cyan"></span>
-                            <span class="menu-bg-color-option gradient-45deg-purple-amber"
-                                data-color="gradient-45deg-purple-amber"></span>
-                            <span class="menu-bg-color-option gradient-45deg-purple-deep-purple"
-                                data-color="gradient-45deg-purple-deep-purple"></span>
-                            <span class="menu-bg-color-option gradient-45deg-deep-orange-orange"
-                                data-color="gradient-45deg-deep-orange-orange"></span>
-                            <span class="menu-bg-color-option gradient-45deg-green-teal"
-                                data-color="gradient-45deg-green-teal"></span>
-                            <span class="menu-bg-color-option gradient-45deg-indigo-light-blue"
-                                data-color="gradient-45deg-indigo-light-blue"></span>
-                            <span class="menu-bg-color-option gradient-45deg-red-pink"
-                                data-color="gradient-45deg-red-pink"></span>
-                        </div>
-                        <div class="solid-color center-align">
-                            <span class="menu-bg-color-option red" data-color="red"></span>
-                            <span class="menu-bg-color-option purple" data-color="purple"></span>
-                            <span class="menu-bg-color-option pink" data-color="pink"></span>
-                            <span class="menu-bg-color-option deep-purple" data-color="deep-purple"></span>
-                            <span class="menu-bg-color-option cyan" data-color="cyan"></span>
-                            <span class="menu-bg-color-option teal" data-color="teal"></span>
-                            <span class="menu-bg-color-option light-blue" data-color="light-blue"></span>
-                            <span class="menu-bg-color-option amber darken-3" data-color="amber darken-3"></span>
-                            <span class="menu-bg-color-option brown darken-2" data-color="brown darken-2"></span>
+                            <span class="navbar-color-option red" data-color="red"></span>
+                            <span class="navbar-color-option purple" data-color="purple"></span>
+                            <span class="navbar-color-option pink" data-color="pink"></span>
+                            <span class="navbar-color-option deep-purple" data-color="deep-purple"></span>
+                            <span class="navbar-color-option cyan" data-color="cyan"></span>
+                            <span class="navbar-color-option teal" data-color="teal"></span>
+                            <span class="navbar-color-option light-blue" data-color="light-blue"></span>
+                            <span class="navbar-color-option amber darken-3" data-color="amber darken-3"></span>
+                            <span class="navbar-color-option brown darken-2" data-color="brown darken-2"></span>
                         </div>
                     </div>
                     <div class="input-field col s12">
                         <div class="switch">
-                            Menu Dark
-                            <label class="float-right"><input class="menu-dark-checkbox" type="checkbox" /> <span
+                            Navbar Dark
+                            <label class="float-right"><input class="navbar-dark-checkbox" type="checkbox" /> <span
                                     class="lever ml-0"></span></label>
                         </div>
                     </div>
                     <div class="input-field col s12">
                         <div class="switch">
-                            Menu Collapsed
-                            <label class="float-right"><input class="menu-collapsed-checkbox" type="checkbox" /> <span
+                            Navbar Fixed
+                            <label class="float-right"><input class="navbar-fixed-checkbox" type="checkbox" checked />
+                                <span class="lever ml-0"></span></label>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mt-6">Footer Options</h6>
+                <hr class="customize-devider" />
+                <div class="navbar-options row">
+                    <div class="input-field col s12">
+                        <div class="switch">
+                            Footer Dark
+                            <label class="float-right"><input class="footer-dark-checkbox" type="checkbox" /> <span
                                     class="lever ml-0"></span></label>
                         </div>
                     </div>
                     <div class="input-field col s12">
                         <div class="switch">
-                            <p class="mt-0">Menu Selection</p>
-                            <label>
-                                <input class="menu-selection-radio with-gap" value="sidenav-active-square"
-                                    name="menu-selection" type="radio" />
-                                <span>Square</span>
-                            </label>
-                            <label>
-                                <input class="menu-selection-radio with-gap" value="sidenav-active-rounded"
-                                    name="menu-selection" type="radio" />
-                                <span>Rounded</span>
-                            </label>
-                            <label>
-                                <input class="menu-selection-radio with-gap" value="" name="menu-selection"
-                                    type="radio" />
-                                <span>Normal</span>
-                            </label>
+                            Footer Fixed
+                            <label class="float-right"><input class="footer-fixed-checkbox" type="checkbox" /> <span
+                                    class="lever ml-0"></span></label>
                         </div>
                     </div>
                 </div>
             </div>
-            <h6 class="mt-6">Navbar Options</h6>
-            <hr class="customize-devider" />
-            <div class="navbar-options row">
-                <div class="input-field col s12 navbar-color mb-0">
-                    <p class="mt-0">Navbar Color</p>
-                    <div class="gradient-color center-align">
-                        <span class="navbar-color-option gradient-45deg-indigo-blue"
-                            data-color="gradient-45deg-indigo-blue"></span>
-                        <span class="navbar-color-option gradient-45deg-purple-deep-orange"
-                            data-color="gradient-45deg-purple-deep-orange"></span>
-                        <span class="navbar-color-option gradient-45deg-light-blue-cyan"
-                            data-color="gradient-45deg-light-blue-cyan"></span>
-                        <span class="navbar-color-option gradient-45deg-purple-amber"
-                            data-color="gradient-45deg-purple-amber"></span>
-                        <span class="navbar-color-option gradient-45deg-purple-deep-purple"
-                            data-color="gradient-45deg-purple-deep-purple"></span>
-                        <span class="navbar-color-option gradient-45deg-deep-orange-orange"
-                            data-color="gradient-45deg-deep-orange-orange"></span>
-                        <span class="navbar-color-option gradient-45deg-green-teal"
-                            data-color="gradient-45deg-green-teal"></span>
-                        <span class="navbar-color-option gradient-45deg-indigo-light-blue"
-                            data-color="gradient-45deg-indigo-light-blue"></span>
-                        <span class="navbar-color-option gradient-45deg-red-pink"
-                            data-color="gradient-45deg-red-pink"></span>
-                    </div>
-                    <div class="solid-color center-align">
-                        <span class="navbar-color-option red" data-color="red"></span>
-                        <span class="navbar-color-option purple" data-color="purple"></span>
-                        <span class="navbar-color-option pink" data-color="pink"></span>
-                        <span class="navbar-color-option deep-purple" data-color="deep-purple"></span>
-                        <span class="navbar-color-option cyan" data-color="cyan"></span>
-                        <span class="navbar-color-option teal" data-color="teal"></span>
-                        <span class="navbar-color-option light-blue" data-color="light-blue"></span>
-                        <span class="navbar-color-option amber darken-3" data-color="amber darken-3"></span>
-                        <span class="navbar-color-option brown darken-2" data-color="brown darken-2"></span>
-                    </div>
-                </div>
-                <div class="input-field col s12">
-                    <div class="switch">
-                        Navbar Dark
-                        <label class="float-right"><input class="navbar-dark-checkbox" type="checkbox" /> <span
-                                class="lever ml-0"></span></label>
-                    </div>
-                </div>
-                <div class="input-field col s12">
-                    <div class="switch">
-                        Navbar Fixed
-                        <label class="float-right"><input class="navbar-fixed-checkbox" type="checkbox" checked /> <span
-                                class="lever ml-0"></span></label>
-                    </div>
-                </div>
-            </div>
-            <h6 class="mt-6">Footer Options</h6>
-            <hr class="customize-devider" />
-            <div class="navbar-options row">
-                <div class="input-field col s12">
-                    <div class="switch">
-                        Footer Dark
-                        <label class="float-right"><input class="footer-dark-checkbox" type="checkbox" /> <span
-                                class="lever ml-0"></span></label>
-                    </div>
-                </div>
-                <div class="input-field col s12">
-                    <div class="switch">
-                        Footer Fixed
-                        <label class="float-right"><input class="footer-fixed-checkbox" type="checkbox" /> <span
-                                class="lever ml-0"></span></label>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!--/ Theme Customizer -->
+        <!--/ Theme Customizer -->
 
-    <!-- BEGIN: Footer-->
+        <!-- BEGIN: Footer-->
 
-    <footer class="page-footer footer footer-static">
-        <div class="footer-copyright">
-            <div class="container"><span>&copy; Pedal Pals 2019</span></div>
-        </div>
-    </footer>
+        <footer class="page-footer footer footer-static">
+            <div class="footer-copyright">
+                <div class="container"><span>&copy; Pedal Pals 2019</span></div>
+            </div>
+        </footer>
 
-    <!-- END: Footer-->
-    <script src="../public/js/script.min.js"></script>
+        <!-- END: Footer-->
+        <script src="../js/script.min.js"></script>
 </body>
 
 </html>
