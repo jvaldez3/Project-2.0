@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Comphealth1",
+    "password": null,
     "database": "pedalpalsDB",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -14,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "database": "JAWSDB_URL",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": "JAWSDB_URL"
   }
 }
