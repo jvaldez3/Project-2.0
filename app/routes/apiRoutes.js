@@ -92,48 +92,80 @@ module.exports = function (app) {
     }
   });
 
-  // app.get('/api/pals', function (req, res) {
-  //   res.json(pals);
-  // });
+  app.get("/api/db/quiz", function (req, res, next) {
+    let user_id = 7;
+    let myQuizResults;
+    let matchQuizResults = []
 
-  // // Add new friend entry
-  // app.post('/api/pals', function (req, res) {
-  //   // Capture the user input object
-  //   var userInput = req.body;
+    if (user_id) {
+      getMyQuiz();
+    } else {
+      res.status(400).json('No User Id');
+    }
+    //get my quizes
+    function getMyQuiz() {
+      db.Quizzes.findAll({
+        limit: 1,
+        where: {
+          user_id: user_id
+        }
+      }).then(function (results) {
+        if (results.length) {
+          console.log(results[0].dataValues)
+          myQuizResults = results[0].dataValues;
+          getMatchedQuizes();
+        } else {
+          res.status(400).json('No Results');
+        }
 
-  //   for (var i = 0; i < userInput.scores.length; i++) {
-  //     userInput.scores[i] = parseInt(userInput.scores[i]);
-  //   }
+      }).catch(function (err) {
+        console.log(err);
+        res.status(400).json('No Results');
+      });
+    }
 
-  //   // Compute best friend match
-  //   var palsIndex = 0;
-  //   var minimumDifference = 50 // Make the initial value big for comparison
+    //get all quizes that match
+    function getMatchedQuizes() {
+      db.Quizzes.findAll({
+        where: {
+          $or: [{
+            gender: myQuizResults.gender,
+          }, {
+            age_range: myQuizResults.age_range
+          }, {
+            type: myQuizResults.type
+          }, {
+            miles: myQuizResults.miles
+          }, {
+            group_size: myQuizResults.group_size
+          }, {
+            competitive: myQuizResults.competitive
+          }, {
+            electric: myQuizResults.electric
+          }, {
+            matching: myQuizResults.matching
+          }, {
+            shopping: myQuizResults.shopping
+          }, {
+            weather: myQuizResults.weather
+          }],
+        }
+      }).then(function (results) {
+        if (results.length) {
+          console.log(results)
+          //return list of matched pals
+          res.status(200).json(results);
+        } else {
+          res.status(400).json('No Results');
+        }
 
-  //   // Examine all existing friends in the list
-  //   for (var i = 0; i < pals.length; i++) {
+      }).catch(function (err) {
+        console.log(err);
+        res.status(400).json('No Results');
+      });
+    }
 
-  //     // Compute differenes for each question
-  //     for (var i = 0; i < pals.length; i++) {
-  //       var totalDifference = 0;
-  //       for (var j = 0; j < pals[i].scores.length; j++) {
-  //         var difference = Math.abs(userInput.scores[j] - pals[i].scores[j]);
-  //         totalDifference += difference;
-  //       };
-
-  //       if (totalDifference < minimumDifference) {
-  //         palsIndex = i;
-  //         minimumDifference = totalDifference;
-  //       };
-  //     };
-
-  //     // Add new user
-  //     pals.push(userInput);
-
-  //     // Send appropriate response
-  //     res.json(pals[palsIndex]);
-  //   };
-  // });
-
+  });
 
 
 };

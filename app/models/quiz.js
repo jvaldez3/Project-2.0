@@ -1,7 +1,7 @@
 module.exports = function (sequelize, DataTypes) {
     var Quizzes = sequelize.define("Quizzes", {
         user_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true
         },
