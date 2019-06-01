@@ -1,8 +1,6 @@
 (function () {
-  const quizAnswers = [];
   const myQuestions = [{
       question: "What gender do you identify as?",
-      questionNum: 1,
       answers: {
         a: "Male",
         b: "Female",
@@ -117,7 +115,7 @@
       // add this question and its answers to the output
       output.push(
         `<div class="slide">
-             <div class="question"><span class="questionNum">${currentQuestion.questionNum}</span> ${currentQuestion.question} </div>
+             <div class="question"> ${currentQuestion.question} </div>
              <div class="answers"> ${answers.join("")} </div>
            </div>`
       );
@@ -145,8 +143,6 @@
   }
 
   function showNextSlide(question, answer) {
-    console.log(document.getElementsByClassName("question"));
-
     showSlide(currentSlide + 1);
   }
 
@@ -168,16 +164,16 @@
     $("#previous").on("click", showPreviousSlide);
     $("#next").on("click", showNextSlide);
     $("#submit").on("click", function () {
-      console.log($('form').serialize());
       var formData = $('form').serialize();
       $.ajax({
         method: "POST",
         url: "/api/db/quiz?" + formData
       }).then(function (data) {
+        console.log("here")
         window.location.replace(data);
-        // If there's an error, log the error
-        // }).catch(function (err) {
-        //     console.log(err);
+
+      }).catch(function (err) {
+        console.log(err);
       });
       // location.href = "/profile"
     })

@@ -2,7 +2,8 @@ module.exports = function (sequelize, DataTypes) {
     var Quizzes = sequelize.define("Quizzes", {
         user_id: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            primaryKey: true
         },
         gender: {
             type: DataTypes.STRING,

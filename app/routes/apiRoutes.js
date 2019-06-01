@@ -25,27 +25,31 @@ module.exports = function (app) {
 
   app.post("/api/db/quiz", function (req, res) {
     var query = req.query;
-    var id = req.session.passport.user.id
-    db.Quizzes.create({
-      user_id: id,
-      gender: (query.question0) ? query.question0 : 'a',
-      age_range: (query.question1) ? query.question0 : 'a',
-      type: (query.question2) ? query.question0 : 'a',
-      miles: (query.question3) ? query.question0 : 'a',
-      group_size: (query.question4) ? query.question0 : 'a',
-      competitive: (query.question5) ? query.question0 : 'a',
-      electric: (query.question6) ? query.question0 : 'a',
-      matching: (query.question7) ? query.question0 : 'a',
-      shopping: (query.question8) ? query.question0 : 'a',
-      weather: (query.question9) ? query.question0 : 'a',
-    }).then(function (results) {
-      console.log(results);
-      res.redirect(307, "/profile");
-    }).catch(function (err) {
-      console.log(err);
-      res.json(err);
-      // res.status(422).json(err.errors[0].message);
-    });
+    var id = (req.session.passport.user.id) ? req.session.passport.user.id : null;
+    if (id) {
+      db.Quizzes.upsert({
+        user_id: id,
+        gender: (query.question0) ? query.question0 : 'a',
+        age_range: (query.question1) ? query.question1 : 'a',
+        type: (query.question2) ? query.question2 : 'a',
+        miles: (query.question3) ? query.question3 : 'a',
+        group_size: (query.question4) ? query.question4 : 'a',
+        competitive: (query.question5) ? query.question5 : 'a',
+        electric: (query.question6) ? query.question6 : 'a',
+        matching: (query.question7) ? query.question7 : 'a',
+        shopping: (query.question8) ? query.question8 : 'a',
+        weather: (query.question9) ? query.question9 : 'a',
+      }).then(function (results) {
+        console.log(results);
+        res.status(200).json("/profile");
+      }).catch(function (err) {
+        console.log(err);
+        res.status(400).json(err);
+        // res.status(422).json(err.errors[0].message);
+      });
+    } else {
+      res.status(400).json('no id');
+    }
   });
   //
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
