@@ -1,0 +1,294 @@
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #36454F;
+}
+
+.brand-logo {
+    padding-left: 50px;
+}
+
+h1 {
+    color: #36454F;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+p {
+    color: #36454F;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    padding-left: 50px;
+}
+
+h3 {
+    color: whitesmoke;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.btn {
+    background-color: #6699CC;
+}
+
+.btn:active {
+    background-color: #36454F
+}
+
+
+body {
+    background-image: url('../img/light-grey-terrazzo.png');
+}
+
+nav {
+    line-height: 56px;
+
+    width: 100%;
+    height: 56px;
+
+    color: #fff;
+    background-color: darkolivegreen;
+}
+
+nav.nav-extended {
+    height: auto;
+}
+
+nav.nav-extended .nav-wrapper {
+    height: auto;
+    min-height: 56px;
+}
+
+nav.nav-extended .nav-content {
+    line-height: normal;
+
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav i,
+nav [class^='mdi-'],
+nav [class*='mdi-'] {
+    font-size: 24px;
+    line-height: 56px;
+
+    display: block;
+
+    height: 56px;
+}
+
+nav .nav-wrapper {
+    position: relative;
+
+    height: 100%;
+}
+
+nav .sidenav-trigger {
+    position: relative;
+    z-index: 1;
+
+    float: left;
+
+    height: 56px;
+}
+
+nav .sidenav-trigger i {
+    line-height: 56px;
+
+    height: 56px;
+}
+
+nav .nav-title {
+    font-size: 32px;
+
+    display: inline-block;
+
+    padding: 28px 0;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+
+    padding: 0;
+
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+nav ul li.active {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+nav ul a {
+    font-size: 1rem;
+
+    display: block;
+
+    padding: 0 15px;
+
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+
+    color: #fff;
+}
+
+nav ul a.btn,
+nav ul a.btn-large,
+nav ul a.btn-small,
+nav ul a.btn-large,
+nav ul a.btn-flat,
+nav ul a.btn-floating {
+    margin-top: -2px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+nav ul a.btn>.material-icons,
+nav ul a.btn-large>.material-icons,
+nav ul a.btn-small>.material-icons,
+nav ul a.btn-large>.material-icons,
+nav ul a.btn-flat>.material-icons,
+nav ul a.btn-floating>.material-icons {
+    line-height: inherit;
+
+    height: inherit;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+nav ul.left {
+    float: left;
+}
+
+nav form {
+    height: 100%;
+}
+
+nav .input-field {
+    height: 100%;
+    margin: 0;
+}
+
+nav .input-field input {
+    font-size: 1.2rem;
+
+    height: 100%;
+    padding-left: 2rem;
+
+    border: none;
+}
+
+nav .input-field input:focus,
+nav .input-field input[type='text']:valid,
+nav .input-field input[type='password']:valid,
+nav .input-field input[type='email']:valid,
+nav .input-field input[type='url']:valid,
+nav .input-field input[type='date']:valid {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+nav .input-field label {
+    top: 0;
+    left: 0;
+}
+
+nav .input-field label i {
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+
+    color: rgba(255, 255, 255, .7);
+}
+
+nav .input-field label.active i {
+    color: #fff;
+}
+
+.navbar-fixed {
+    position: relative;
+    z-index: 997;
+
+    height: 56px;
+}
+
+.navbar-fixed nav {
+    position: fixed;
+}
+
+@media only screen and (min-width: 601px) {
+    nav.nav-extended .nav-wrapper {
+        min-height: 64px;
+    }
+
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+        line-height: 64px;
+
+        height: 64px;
+    }
+
+    .navbar-fixed {
+        height: 64px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+
+    color: rgba(0, 0, 0, .87);
+}
+
+.slider .indicators .indicator-item {
+    background-color: #666666;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #ffffff;
+}
+
+.slider {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.slider .indicators {
+    bottom: 60px;
+    z-index: 100;
+    /* text-align: left; */
+}
+
+.page-footer {
+    background-color: #36454F;
+    padding-top: 50px;
+}

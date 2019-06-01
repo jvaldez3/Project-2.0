@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One&display=swap);
+
+body {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    background-color: #f8f6f0;
+}
+
+.login-dark {
+    height: 1000px;
+    background: url(../img/clycling2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.login-dark form {
+    max-width: 320px;
+    width: 100%;
+    background-color: #1e2833;
+    padding: 40px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2)
+}
+
+.login-dark .illustration {
+    font-family: 'Fjalla One',
+        sans-serif;
+    text-align: center;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef
+}
+
+.login-dark form .form-control {
+    font-family: 'Fjalla One',
+        sans-serif;
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    color: inherit
+}
+
+/* .login-dark form .btn-primary:active {
+    transform: translateY(1px)
+  }  */
+
+h1 {
+    font-weight: 300;
+    margin: 0px;
+    /* padding: 10px; */
+    font-size: 35px;
+    background-color: #1e2833;
+    font-family: 'Fjalla One',
+        sans-serif;
+    color: #2980ef;
+
+}
+
+.question {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: 'Fjalla One',
+        sans-serif;
+    background: #2980ef;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: 0
+}
+
+button:hover {
+    font-family: 'Fjalla One',
+        sans-serif;
+    background: whitesmoke;
+    outline: 0
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.quiz-container {
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+}

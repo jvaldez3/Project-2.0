@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="login-dark">
+        <form id="sign" method="post">
+            <h1 class="sr-only">Login Form</h1>
+            <div class="illustration">
+                <h2 class="title">Create Account</h2>
+                <i class="icon ion-ios-locked-outline"></i>
+            </div>
+            <form class="signup">
+                <div class="firstName">
+                    <input class="form-control" type="text" name="firstName" id="first-name" placeholder="First Name">
+                </div>
+                <div class="lastName">
+                    <input class="form-control" type="text" name="lastName" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="userName">
+                    <input class="form-control" type="text" id="user-name" name="userName" placeholder="Username">
+
+                    <div class="emailInput">
+                        <input class="form-control" type="email" id="signup-email" name="email" placeholder="Email">
+                    </div>
+                    <div class="passwordInput">
+                        <input class="form-control" type="password" id="signup-password" name="createPassword"
+                            placeholder="Create Password">
+                    </div>
+                    <button id="createAccount" class="btn btn-primary btn-block">Create</button>
+            </form>
+        </form>
+    </div>
+
+
+    <!-- <script type="text/jquery" src="../../models/index.js"></script> -->
+    <script type="text/javascript" src="/js/account.js"></script>
+</body>
+
+</html>
