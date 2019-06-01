@@ -8,7 +8,18 @@ nav .nav-wrapper {
     padding-right: 50px;
     background-color: 36454F;
 }
+#bannerimage{
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
 
+#right{
+    text-align: center;
+}
+
+.col s12{
+    padding-left:25px;
+}
 /*----------------------------------------
         Profile Page
     ------------------------------------------*/
@@ -17,6 +28,10 @@ nav .nav-wrapper {
     height: 50px;
 }
 
+.z-depth-5{
+    width: 200px;
+    height: 200px;
+}
 #user-profile .user-section-negative-margin {
     position: relative;
     margin-top: -115px;

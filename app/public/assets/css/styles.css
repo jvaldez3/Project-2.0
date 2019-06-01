@@ -1,6 +1,6 @@
 .login-dark {
   height: 1000px;
-  background: url(../img/cycling.jpg) #475d62;
+  background: url(../img/cycling6.jpeg) #475d62;
   background-size: cover;
   position: relative;
 }
@@ -25,7 +25,7 @@
   text-align: center;
   padding: 15px 0 20px;
   font-size: 100px;
-  color: #2980ef
+  color: #6699CC
 }
 
 .login-dark form .form-control {
@@ -43,7 +43,7 @@
 .login-dark form .btn-primary {
   font-family: 'Fjalla One',
     sans-serif;
-  background: #2980ef;
+  background: #6699CC;
   border: none;
   border-radius: 4px;
   padding: 11px;
@@ -57,7 +57,7 @@
 .login-dark form .btn-primary:hover {
   font-family: 'Fjalla One',
     sans-serif;
-  background: #2980ef;
+  background: #6699CC;
   outline: 0
 }
 
